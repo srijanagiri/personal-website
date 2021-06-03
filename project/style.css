@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  background-image: url("wall.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.slidercontainer {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.showSlide {
+  display: none;
+}
+.showSlide img {
+  margin-top: 28%;
+  margin-left: 15%;
+  height: 500px;
+  width: 800px;
+  object-fit: cover;
+}
+.content {
+  color: yellow;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: relative;
+  top: -100px;
+  width: 100%;
+  text-align: center;
+}
+.left,
+.right {
+  cursor: pointer;
+  position: relative;
+
+  width: 50px;
+  padding: 16px;
+
+  margin-left: 35%;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 1s ease;
+  border-radius: 50px 20px;
+}
+.right {
+  right: 0px;
+  border-radius: 50px 20px;
+}
+.left:hover,
+.right:hover {
+  margin: 0px;
+  background-color: black;
+}
+.active {
+  background-color: brown;
+}
+/*Fading animation*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
